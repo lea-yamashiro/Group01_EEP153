@@ -21,5 +21,10 @@ Because you accepted the invitation to this repository and also set up GitHub de
 
 The main scary thing with GitHub is that things don't just update automatically between your local computer's disk and the online environment. If you change something online, that change won't happen automatically in your computer's folder, and vice versa. This is where GitHub desktop comes in. 
 
+Click on the GitHub application. This should open the main panel of GitHub Desktop. Go to the upper right and navigate to the Kitagawa directory. On the top panel, there is a button with a drop-down arrow that mentions "push to origin," and can switch to "fetch from origin." The "origin", in this case, is the main online repository. What these two button-actions do is either "fetch" any changes made online and updates it in your local GitHub folder, or "pushes" the changes you've made on your computer to the online version. Make sure that when opening any files from the GitHub folder on your computer, you first execute this "fetch" mechanism, so that you're not working on an old version of something. 
+
+### Pull Requests and Version Control 
+TBD 
+
 
 
