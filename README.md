@@ -1,6 +1,6 @@
 # Kitagawa Group! 
 
-### This README file is a general how-to for Kitagawa group's Projects 0/1 in working with GitHub in EEP 153. 
+### This README file is a general how-to for the Kitagawa group's Projects 0/1 in working with GitHub in EEP 153. 
 
 Our project files involving Jupyter Notebooks will be organized into folders in the main repository. 
 
