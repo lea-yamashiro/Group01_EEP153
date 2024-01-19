@@ -11,3 +11,7 @@ In simple terms, GitHub is a "version control" environment software developers u
 Terminal: if you're already comfortable with Terminal, GitHub is pretty easy to use, and you probably already know to use it. If you've never used Terminal, the best option (starting out) is to use GitHub Desktop. 
 
 So: download and install GitHub Desktop: https://desktop.github.com/
+Once you do this successfully, the program will automatically set up a folder somewhere in your Finder labelled "GitHub." (Go check to make sure it's there.) 
+
+Now you want to get OUR group's repository into YOUR GitHub
+
