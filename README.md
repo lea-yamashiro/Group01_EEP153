@@ -12,6 +12,8 @@ Terminal: if you're already comfortable with Terminal, GitHub is pretty easy to 
 
 So: download and install GitHub Desktop: https://desktop.github.com/
 Once you do this successfully, the program will automatically set up a folder somewhere in your Finder labelled "GitHub." (Go check to make sure it's there.)
+
+
 Since you're here, that means that you accepted an invitation to this Kitagawa_EEP153 "repository." Don't get it twisted – "repository" is just a fancy name for a literal FOLDER (you could call your Google Drive folders "repositories.") In this context, it's different from your average "folder" like your "Downloads" because this one will hold version-controlled code with an online-accessible interface. Hence, this Kitagawa_EEP153 repository is where we'll store our work for Projects 0 and 1 in this new class! 
 
 Because you accepted the invitation to this repository and also set up GitHub desktop, the GitHub folder on your computer should have two things in it right now: 
