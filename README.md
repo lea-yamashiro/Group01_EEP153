@@ -1,6 +1,6 @@
 # Group01_EEP153
 
-##### This is a general how-to for Group 0/1 in working with GitHub for our initial projects in EEP 153. 
+### This is a general how-to for Group 0/1 in working with GitHub for our initial projects in EEP 153. 
 Our project files involving Jupyter Notebooks will be organized into folders in the main repository. 
 
 ## GitHub basics: 
@@ -18,6 +18,8 @@ Since you're here, that means that you accepted an invitation to this Kitagawa_E
 Because you accepted the invitation to this repository and also set up GitHub desktop, the GitHub folder on your computer should contain a folder called "Kitagawa_EEP153." Spoiler: this is the same folder as the one you're accessing online right now! As such, that folder should have the same two things this online one does: a file called "README.md" and a folder named "Notebooks_Project0". Check to make sure those are there, and that inside THAT folder, there's a file named "week0.ipynb". That's the Jupyter Notebook Prof. Ligon gave us to practice a little bit with Pandas. 
 
 ## GitHub Desktop 
+
+The main scary thing with GitHub is that things don't just update automatically between your local computer's disk and the online environment. If you change something online, that change won't happen automatically in your computer's folder, and vice versa. This is where GitHub desktop comes in. 
 
 
 
