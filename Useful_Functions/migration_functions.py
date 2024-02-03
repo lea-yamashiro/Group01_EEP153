@@ -29,6 +29,8 @@ def migration_organizing(data1):
 
     return mig_table
 
+
+
 ''' This function is a manual way of creating a dataframe that is usually performed by 
     a "group_by" function. The reason for this distinction is because we used the group_by
     function, but were really struggling to perform table-operations on the group_by frame, 
@@ -57,4 +59,52 @@ def setup_long(dataframe):
             lambda x: stats.percentileofscore(results['Migration Rate (%)'], x))
 
         return results 
+
+
+
+
+''' This is the function that we use to retrieve population statistics, as outlined in the 
+    [A] deliverables posted on Ed.'''
+
+
+def population(year, sex, age_low, age_high, country_code):
     
+    # reconstruct the strings for population codes associated 
+    # as entered in "age_low" and "age_high" arguments
+    
+    if sex == "Male":
+        column_names = {"SP.POP." + str(age_low)+str(age_high) + ".MA": sex}
+    elif sex == "Female":
+        column_names = {"SP.POP." + str(age_low)+str(age_high) + ".FE": sex}
+    
+    # construct new dataframe for function to index, isolating 
+    # the country by the function's country-code argument
+    pop_stats = wbdata.get_dataframe(column_names, country = country_code)
+    
+    # filter the table by the function's year' argument
+    
+    pop_stats = pop_stats.filter(like=str(year), axis=0)
+    # return population number by indexing the function-generated 
+    # dataframe by the function's 'sex' argument, and making it an integer
+
+    return int(pop_stats[sex].iloc[0])
+
+
+
+
+''' This function retrieves a dataframe for specific year, country, and indicators selected. 
+    The function assumes that the argument pop_indicators has already been defined with a 
+    relevant WBData code dictionary.'''
+
+def population_dataframe(year, country_code, pop_indicators):
+        
+    pop_df = wbdata.get_dataframe(pop_indicators, country = country_code)
+    
+    # filter the table by the function's year' argument
+    
+    pop_df = pop_df.filter(like=str(year), axis=0)
+    
+    # return population dataframe by indexing  
+    # by the function's 'sex' argument
+
+    return pop_df
