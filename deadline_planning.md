@@ -1,6 +1,6 @@
 # PLANNING FOR 2/9/24 @ 2:00 p.m.
 
-##For video: 
+## For video: 
 
 ### - background: 
   - what is migration? 
