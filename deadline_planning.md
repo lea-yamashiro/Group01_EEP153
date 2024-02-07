@@ -20,7 +20,7 @@ Reminders for doing research:
 - Save sources !!!!
 - Bullet point things out instead of writing out formally
   
-### - then code: 
+### - then code: ** Himalia and Lea **
   - run through the whole notebook
   - show functions
   - show dataframes
