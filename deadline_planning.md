@@ -26,3 +26,4 @@ Reminders for doing research:
   - show dataframes
   - show figures
 
+## Meet to do final recording: Thurs. Feb 8 after 6:00 p.m.
