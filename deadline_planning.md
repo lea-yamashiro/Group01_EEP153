@@ -14,7 +14,11 @@
   - for the countries that we chose: ** JACKIE ** 
     - give general statistics and background for these countries 
     - are there any patterns betewen these countries in terms of: 
-      - geographic layout/region? (equatorial? geologic features?) 
+      - geographic layout/region? (equatorial? geologic features?)
+
+Reminders for doing research: 
+- Save sources !!!!
+- Bullet point things out instead of writing out formally
   
 ### - then code: 
   - run through the whole notebook
