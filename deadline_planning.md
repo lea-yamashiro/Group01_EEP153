@@ -20,10 +20,11 @@ Reminders for doing research:
 - Save sources !!!!
 - Bullet point things out instead of writing out formally
   
-### - then code: ** Himalia and Lea **
-  - run through the whole notebook
-  - show functions
-  - show dataframes
-  - show figures
+### - then code: 
+  - for video ** Himalia and Lea **
+    - run through the whole notebook
+    - show functions
+    - show dataframes
+    - show figures
 
 ## Meet to do final recording: Thurs. Feb 8 after 6:00 p.m.
