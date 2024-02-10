@@ -1,4 +1,5 @@
 # for many WBdata population pyramids at once based on a single dataframe
+# assumes there is already a pre-set variable or array of column indicators named "variables" 
 
 def pyramid_all(yrstring):
     
