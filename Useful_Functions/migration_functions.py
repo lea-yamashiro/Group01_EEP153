@@ -1,7 +1,8 @@
-''' This function is used to clean the data, and in order to calculate per-capita statistics 
-    we need specifically for isolating the high-migration population.'''
 
 def migration_organizing(data1):
+    
+    ''' This function is used to clean the data, and in order to calculate per-capita statistics 
+    we need specifically for isolating the high-migration population.'''
     
     # Make years ints instead of strings
     data1.reset_index(inplace=True)
@@ -30,13 +31,12 @@ def migration_organizing(data1):
     return mig_table
 
 
-
-''' This function is a manual way of creating a dataframe that is usually performed by 
+def setup_long(dataframe):
+    
+    ''' This function is a manual way of creating a dataframe that is usually performed by 
     a "group_by" function. The reason for this distinction is because we used the group_by
     function, but were really struggling to perform table-operations on the group_by frame, 
     as that function creates a special type of dataframe. This method was much faster.'''
-
-def setup_long(dataframe):
     
     #percentiles = {'values': [50, 75, 80, 90]}
     unique_country_indices = dataframe.index.unique()
@@ -62,12 +62,10 @@ def setup_long(dataframe):
 
 
 
-
-''' This is the function that we use to retrieve population statistics, as outlined in the 
-    [A] deliverables posted on Ed.'''
-
-
 def population(year, sex, age_low, age_high, country_code):
+    
+    ''' This is the function that we use to retrieve population statistics, as outlined in the 
+    [A] deliverables posted on Ed.'''
     
     # reconstruct the strings for population codes associated 
     # as entered in "age_low" and "age_high" arguments
@@ -91,12 +89,11 @@ def population(year, sex, age_low, age_high, country_code):
 
 
 
-
-''' This function retrieves a dataframe for specific year, country, and indicators selected. 
+def population_dataframe(year, country_code, pop_indicators):
+    
+    ''' This function retrieves a dataframe for specific year, country, and indicators selected. 
     The function assumes that the argument pop_indicators has already been defined with a 
     relevant WBData code dictionary.'''
-
-def population_dataframe(year, country_code, pop_indicators):
         
     pop_df = wbdata.get_dataframe(pop_indicators, country = country_code)
     
