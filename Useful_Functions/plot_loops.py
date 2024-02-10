@@ -1,3 +1,5 @@
+# for many WBdata population pyramids at once based on a single dataframe
+
 def pyramid_all(yrstring):
     
     py.init_notebook_mode(connected=True)
@@ -30,5 +32,14 @@ def pyramid_all(yrstring):
         
         py.iplot(dict(data=bins, layout=layout))
 
+# scatter a whole bunch of plots
 
-
+def scatter_all(frame, dependent_variable, xrange = [int,int], yrange = [int,int]):
+    columns = frame.columns
+    for column in columns: 
+        frame.iplot(kind='scatter', mode='markers', symbol='symboltype',
+         y=dependent_variable,x=str(column), 
+         text=frame.reset_index('qualitative_index')['qualitative_index'].values.tolist(), # for whatever is the qualitative index sorting by to be interactive
+         yTitle=str(dependent_variable),xTitle=str(column), 
+         categories= 'color_column', # column in dataframe you want things to be automatically color-coded by
+         title= str(column)+' versus Migration Rate (%)')
